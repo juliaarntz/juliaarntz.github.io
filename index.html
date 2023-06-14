@@ -2,18 +2,37 @@
 <html lang="en">
  
 <style>
+    body {	
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+
     video {	
-        margin-bottom:25px;
+        margin-bottom: -2.6%;
+        margin-left: -46px;
         /* Rounded corners (Firefox 5 only) */
-        -moz-border-radius:20px;
-        -webkit-border-radius:20px;
-        border-radius:20px;
+        -moz-border-radius: 45px;
+        -webkit-border-radius: 45px;
+        border-radius: 45px;
+        width: 57%;
+        position: relative;
+        z-index: 0;
+        opacity: 0.4; /* Set the opacity to 50% */
+    }
+
+    /* Add a higher z-index value and relative positioning to the Polare logo image */
+    .logo {
+        width: 40%;
+        float: left;
+        margin-left: 5%;
+        position: relative;
+        z-index: 1;
     }
 </style>
 
 <head>
     <meta charset="UTF-8">
-     <!--working on phone-->
+    <!--working on phone-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autor" content="Julia Arntz"/>
     <title>Portfolio Julia Arntz</title>
@@ -22,19 +41,35 @@
     <!--header-->
     <img src="Background.PNG" style="width:100%; position: center; repeat: no-repeat; size: cover;">
     <!--Polare-->
-    <video width="55%""; position="left"; border-radius="25px"; overflow="hidden"; autoplay;>
-        <source src="Polare.mp4" type="video/mp4">
-        <source src="Polare.ogg" type="video/ogg">
-      Your browser does not support the video tag.
-      style=" 
-      </video>
-<iframe width="55%" 
-src="https://www.youtube.com/watch?v=YcDGhGOlJAQ">
-</iframe>
-      <img src="Polare text.PNG" style="width:44%; position:left">
-    <!--comments
+    <div style="position: relative;">
+        <video position="left" autoplay muted controls>
+            <source src="Polare.MP4" type="video/MP4">
+        </video>
+        <img src="Polare text.PNG" style="width:44%; float:right">
+        <img src="Polare logo.PNG" class="logo">
+    </div>
+    <a href="default.asp"><img src="Polare link.PNG" alt="Read more" style="width:13%; float:leftt; margin-left: 11%; margin-top: 20px; margin-bottom: 5%;"></a>
+<br>
 
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYkdHPq7M7qG4fnEF7xQEpP%2FWeb-portfolio%3Ftype%3Ddesign%26node-id%3D401%253A3%26t%3DDfJxYcmrxAAp9RAZ-1" allowfullscreen></iframe>
-    -->
+<!--Fitit-->
+<div style="position: relative;">
+    <video position="right" style="float:right; margin-right: -46px;" autoplay muted controls>
+        <source src="Fitit.MP4" type="video/MP4">
+    </video>
+    <img src="Fitit text.PNG" style="width:44%; float:left">
+    <img src="Fitit logo.PNG" class="logo" style="width:42%; margin-top: -18px;">
+</div>
+<a href="default.asp"><img src="Fitit link.PNG" alt="Read more" style="width:13%; float:leftt; margin-left: 11%; margin-top: 20px; margin-bottom: 5%;"></a>
+<br>
+
+    <!--Kompassie-->
+    <div style="position: relative;">
+        <video position="left" autoplay muted controls>
+            <source src="Kompassie.MP4" type="video/MP4">
+        </video>
+        <img src="Kompassie text.PNG" style="width:44%; float:right">
+        <img src="Kompassie logo.PNG" style="width:25%;" class="logo">
+    </div><br><br>
+    <a href="default.asp"><img src="Kompassie link.PNG" alt="Read more" style="width:13%; float:leftt; margin-left: 26%; margin-top: 20px;"></a>
 </body>
 </html>
